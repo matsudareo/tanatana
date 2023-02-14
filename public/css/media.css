@@ -1,0 +1,47 @@
+@media screen and (max-width: 900px) {
+
+/* count_page */
+.back_btn {
+  margin-bottom: 15px;
+}
+
+.imgarea {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 20px;
+}
+
+.categoly {
+  height: 18vw;
+  width: 32vw;
+}
+
+.list_btn{
+  height: 30px;
+  width: 150px;
+  display: inline-block;
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+  color: #0283d3;
+  font-weight: bold;
+  font-size: large;
+  background:white;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+.list_btn:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.all_list {
+  margin: 40px auto;
+  margin-top: 80px;
+  width: 700px;
+  border: 2px solid rgb(20, 196, 164);
+}
+
+}
