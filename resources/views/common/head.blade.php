@@ -6,6 +6,7 @@
 	<title>Tanatana</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('/css/common.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('/css/media.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('/css/styles.css') }}">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
