@@ -7853,7 +7853,7 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  background-color: -webkit-linear-gradient( left, rgba(155, 240, 147, 0.5), rgba(145, 200, 248, 0.1)); 
 }
 
 .bg-body {
