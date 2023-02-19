@@ -406,7 +406,7 @@ th {
 
 .back_btn{
     height: 40px;
-    width: 170px;
+    width: 185px;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -463,8 +463,8 @@ th {
 }
 .list_btn{
     position: absolute;
-    top: 43%;
-    left: 24%;
+    top: 42%;
+    left: 23%;
     height: 50px;
     width: 190px;
     display: inline-block;
