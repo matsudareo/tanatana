@@ -9,9 +9,14 @@ $(function () {
     alert('本当に削除してよろしいですか');
   })
 
+  $(".navbar-brand").on("mouseover",function(){
+    $(this).css("color","green");
+  }).mouseout(function() {
+    $(this).css("color","blue");
+  })
+  
 
-
-  window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
     var navbarShrink = function () {
