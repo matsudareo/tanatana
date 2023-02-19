@@ -7,7 +7,7 @@
 <div class = "wrapper">
 
 
-<p class="top_sentents">在庫量を入力してください</p>
+<p class="top_sentents">在庫量を入力し、計上ボタンを押してください<br>最後に表の右下の完了ボタンを押したら計上されます。</p>
 
 <button type="button" onClick="history.back()" class="selection">戻る</button>
 
