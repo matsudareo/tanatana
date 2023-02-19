@@ -311,7 +311,7 @@ th {
 }
 .fail_regi_btn{
     height: 40px;
-    width: 60px;
+    width: 75px;
     border-radius: 10px;
     border: #91c8f8;
     color: #fff;
@@ -712,14 +712,6 @@ th {
     margin-right: 100px
 }
 
-
-.count_all {
-    /* width: 250px;
-    padding: 10px 20px;
-    border: 2px solid #395b80;
-    margin: 0 auto;
-    text-align: center; */
-}
 
 .count_all {
     position: relative;
