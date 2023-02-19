@@ -17,6 +17,26 @@
 <form action="" method="POST">
 <div class="form">
 <input type="form" name="fail" class="fail_regi_form">
+    {{ csrf_field() }}
+<input type="submit" name='submit' class="fail_regi_btn btn--shadow" value="新規登録">
+
+</form>
+</div>
+</div><!-- fail_regi_area -->
+
+<div class = "fail_regi_area">
+<p class="sentents">ファイルの登録はこちらから行えます。<br>ファイル名を記入し、登録ボタンを押してください。</p>
+
+<!-- エラーが出たら表示 -->
+@if ($errors->any())
+        @foreach ($errors->all() as $error)
+        <div class="err_msg">{{ $error }}</div>
+        @endforeach
+@endif
+
+<form action="" method="POST">
+<div class="form">
+<input type="form" name="fail" class="fail_regi_form">
 
 <select name="fail_id" class="fail_select_form">
 <option value="0">コピーするファイル</option>
