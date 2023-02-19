@@ -30,7 +30,6 @@ class TanaController extends Controller
         // 内容を受け取り変数に入れる
         $fail = $request ->input('fail');
         $submit = $request->get('submit');
-        dump($request);
 if($submit == '新規登録'){
     $months = Month::insert(["fail_name" => $fail]);
     $months = Month::all();
