@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('months', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('fail_name', 20)->comment('ファイル名');
-            $table->timestamps('created_at');
-            $table->timestamps('update_at');
+        Schema::create('ms', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+
         });
     }
 
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('months');
+        Schema::dropIfExists('ms');
     }
 };
