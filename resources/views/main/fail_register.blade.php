@@ -39,7 +39,6 @@
 <input type="form" name="fail" class="fail_regi_form">
 
 <select name="fail_id" class="fail_select_form">
-<option value="0">コピーするファイル</option>
 @php
 if(isset($months)){
 foreach($months as $fail_value) {
@@ -61,7 +60,7 @@ foreach($months as $fail_value) {
 
 <div class="form">
 <select name="fail_id" class="fail_select_form">
-<option value="0">ファイル名</option>
+<option value="">ファイル名</option>
 @php
 if(isset($months)){
 foreach($months as $fail_value) {

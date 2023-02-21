@@ -81,9 +81,9 @@
 
 <form action="" method="post" class="d_form">
   @csrf
-  
+  @if (isset($fail_value))
   <input type="hidden" name="id" value="{{ $fail_value->month_id }}">
- 
+  @endif
 
   <input type="submit" name="submit" value="完了" class="d_btn">
 </form>

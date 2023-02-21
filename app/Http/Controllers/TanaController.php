@@ -268,6 +268,9 @@ foreach($report->manegements as $tag)
     }
 
     public function count(Request $request){
+        $request->validate([
+            'fail_id'  => 'required'
+        ]);
     $id = $request->input('fail_id');
     $fail = Month::find($id);
     $count =  Month::find($id)->manegements->sum("stock_amont");
