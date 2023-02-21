@@ -620,7 +620,9 @@ th {
 .edit_conf_area{
     display: flex;
     justify-content: center;
-    margin: 40px 0;
+    margin: 40px auto;
+    border-bottom: 2px solid rgb(20, 196, 164);
+    width: 300px;
 }
 .edit_conf_area p {
     width: 60px;

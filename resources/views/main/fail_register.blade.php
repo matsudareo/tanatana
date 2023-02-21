@@ -5,7 +5,7 @@
 <div class = "wrapper">
 
 <div class = "fail_regi_area">
-<p class="sentents">ファイルの登録はこちらから行えます。<br>ファイル名を記入し、登録ボタンを押してください。</p>
+<p class="sentents">ファイルの登録はこちらから行えます。<br>ファイル名を記入し、新規登録ボタンを押してください。</p>
 
 <!-- エラーが出たら表示 -->
 @if ($errors->any())
@@ -25,7 +25,7 @@
 </div><!-- fail_regi_area -->
 
 <div class = "fail_regi_area">
-<p class="sentents">ファイルの登録はこちらから行えます。<br>ファイル名を記入し、登録ボタンを押してください。</p>
+<p class="sentents">新規作成し以前のファイルをコピーする場合はこちらからお願いします。<br>ファイル名を記入し、コピーするファイル選択後、登録ボタンを押してください。</p>
 
 <!-- エラーが出たら表示 -->
 @if ($errors->any())
