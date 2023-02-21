@@ -21,14 +21,28 @@
   <p class="edit_list">商品名</p>
 <input type="form" name="name" value="{{ $edit_value->merchandise }}" class="edit_form">
 </div>
-
+<!-- 
 <div class="form">
 <p class="edit_list">分類選択</p>
-<input type="form" name="categolise" value="{{ $edit_value->categoly_id }}"   placeholder="分類選択" class="edit_form">
-</div>
-<!-- <div class="form">
+<input type="form" name="categolise" value=""   placeholder="分類選択" class="edit_form">
+</div> -->
+<div class="form">
 <select name="categolise" class="list_select_form" >
-<option value="">カテゴリー選択</option>
+<option value="{{ $edit_value->categoly_id }}">
+  @if($edit_value->categoly_id === 1)
+  野菜類
+  @elseif($edit_value->categoly_id === 2)
+  肉類
+  @elseif($edit_value->categoly_id === 3)
+  海鮮類
+  @elseif($edit_value->categoly_id === 4)
+  調味料
+  @elseif($edit_value->categoly_id === 5)
+  消耗品
+  @elseif($edit_value->categoly_id === 6)
+  ドリンク
+  @endif
+</option>
 <option value="1" @if( old("categolise") === "1") selected @endif>野菜類</option>
 <option value="2" @if( old("categolise") === "2") selected @endif>肉類</option>
 <option value="3" @if( old("categolise") === "3") selected @endif>海鮮類</option>
@@ -36,7 +50,7 @@
 <option value="5" @if( old("categolise") === "5") selected @endif>消耗品</option>
 <option value="6" @if( old("categolise") === "6") selected @endif>ドリンク</option>
 </select>
-</div> -->
+</div>
 
 <div class="form">
 <p class="edit_list">商品金額</p>

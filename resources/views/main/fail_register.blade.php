@@ -30,7 +30,8 @@
 <!-- エラーが出たら表示 -->
 @if ($errors->any())
         @foreach ($errors->all() as $error)
-        <div class="err_msg">{{ $error }}</div>
+        <div class="err_msg">{{ $error }}
+        </div>
         @endforeach
 @endif
 
