@@ -2,14 +2,6 @@
 @extends('common.head')
 @section('content')
 
-<!-- @php
-// アクセス制限
-$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : NULL;
-if (!(strpos($referer, '/home') !== false|| strpos($referer, 'count.php') !== false )) {
-    header("Location:/");
-    exit;
-}
-@endphp -->
 <div class = "wrapper">
 <div class = "fail_regi_area">
 <p class="sentents">棚卸ファイルを選択してください。</p>
