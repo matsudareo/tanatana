@@ -40,7 +40,7 @@
 
 <div class="categoly">
 <img src ="{{asset('img/cabinet.jpg')}}">
-<input type="submit"  name="submit" value="調味料全品" class="list_btn">
+<input type="submit"  name="submit" value="調味料一覧" class="list_btn">
 </div>
 
 <div class="categoly">
