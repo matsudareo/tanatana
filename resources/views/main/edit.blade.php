@@ -53,12 +53,12 @@
 </div>
 
 <div class="form">
-<p class="edit_list">商品金額</p>
+<p class="edit_list">商品金額(円)</p>
 <input type="form" name="amont" value="{{ $edit_value->amont }}" placeholder="商品金額" class="edit_form">
 </div>
 
 <div class="form">
-<p class="edit_list">商品の重さ</p>
+<p class="edit_list">商品の重さ(g)</p>
 <input type="form" name="weight" value="{{ $edit_value->all_weight }}" placeholder="商品の重さ" class="edit_form">
 </div>
 

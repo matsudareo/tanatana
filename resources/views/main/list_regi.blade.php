@@ -35,11 +35,11 @@
 </div>
 
 <div class="form">
-<input type="form" name="amont" placeholder="商品金額" class="list_regi_form" value="{{ old('amont') }}">
+<input type="form" name="amont" placeholder="商品金額(円)" class="list_regi_form" value="{{ old('amont') }}">
 </div>
 
 <div class="form">
-<input type="form" name="weight" placeholder="商品の重さ" class="list_regi_form" value="{{ old('weight') }}">
+<input type="form" name="weight" placeholder="商品の重さ(g)" class="list_regi_form" value="{{ old('weight') }}">
 </div>
 
 {{ csrf_field() }}
