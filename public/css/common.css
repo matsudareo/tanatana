@@ -337,6 +337,13 @@ th {
     height: 40px;
     width: 190px;
 }
+.copy_select_form {
+    border-color:#91c8f8 ;
+    border-radius: 10px;
+    outline:none;
+    width: 190px;
+    margin-bottom: -10px;
+}
 .fail_select_btn{
     height: 40px;
     width: 60px;
@@ -358,6 +365,12 @@ th {
     font-size: large;
     border-bottom: 2px solid rgb(20, 196, 164);
     padding: 20px 0;
+    text-align: center;
+}
+.sentent {
+    color: #218eed;
+    font-size: large;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -388,7 +401,6 @@ th {
     color: #67c5ff;
 }
 .selection{
-    margin-left: 150px;
     height: 40px;
     width: 100px;
     display: inline-block;

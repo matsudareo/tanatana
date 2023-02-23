@@ -44,26 +44,27 @@ $request->regenerateToken();
         // これで情報は出せる
         $report = Month::with('manegements')->find($id);
     // with('manegements')はなくても行ける
-   $new_report = $report->replicate(['fail_name'])->fill([]); // 複製の機能はこれ
+    
+   //$new_report = $report->replicate(['fail_name'])->fill([]); // 複製の機能はこれ
+$new_report = Month::with('manegements')->create(["fail_name" => $fail]);
 //    入力したファイル名にする
-    $new_report ->fail_name  = $fail;
-    $new_report ->save();
-
-foreach($report->manegements as $tag)
+foreach($report as $value){
+foreach($value->manegements as $tag)
 {
     $s = $tag->replicate(['stock_amont', 'stock_weight']);
     // ここでmonth_idをupdateしたい
     $s -> stock_amont = 0;
     $s -> stock_weight = 0;
-    // $sにmonth_id書いても効かない
-    // $reportを$new_reportに変えてsave文に書いたら行けた
+    //$sにmonth_id書いても効かない
+    //$reportを$new_reportに変えてsave文に書いたら行けた
+   
     $new_report->manegements()->save($s);
 }
-//  コピー確定
- $new_report->push();
+}
+ //コピー確定
+$new_report->push();
 
- //dump($new_report);
-   //$new_report->save();
+$new_report->save();
     
         //全データの取り出し
         $months = Month::all();
@@ -71,7 +72,8 @@ foreach($report->manegements as $tag)
         return view('main.fail_register',["months" => $months]);
          // 二重送信防止
         $request->regenerateToken();
-    }
+
+}
 
 
     //これがあればurlはfail_id=になる

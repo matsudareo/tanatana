@@ -39,7 +39,7 @@
 <div class="form">
 <input type="form" name="fail" class="fail_regi_form">
 
-<select name="fail_id" class="fail_select_form">
+<select name="fail_id[]" class="copy_select_form" multiple >
 @php
 if(isset($months)){
 foreach($months as $fail_value) {
@@ -51,6 +51,7 @@ foreach($months as $fail_value) {
 <button type="submit" class="fail_regi_btn btn--shadow">登録</button>
 
 </form>
+<p class="sentent">コピーファイルを複数選択する際はctrlキーを押しながら2個目をクリックしてください。</p>
 </div>
 </div><!-- fail_regi_area -->
 
