@@ -321,6 +321,8 @@ $new_report->save();
         $count =  Month::find($fail_id)->manegements->sum("stock_amont");
 
         $fail = Month::find($fail_id);
+
+        $amont_all = Month::find($fail_id)->update(["amont_all" => $count]);
         
         //dump($count);
         return view('main.count',["fails" => $fail,"count_all"=>$count]);
