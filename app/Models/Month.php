@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Month extends Model
 {
     use HasFactory;
-    protected $fillable = ['id','fail_name'];
+    protected $fillable = ['id','fail_name','amont_all'];
 
    // protected $table = 'Month';
 

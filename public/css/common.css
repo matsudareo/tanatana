@@ -539,7 +539,7 @@ th {
 .all_list {
     margin: 40px auto; 
     margin-top: 50px; 
-    width: 1000px;
+    /* width: 1000px; */
     border: 2px solid rgb(20, 196, 164);
 }
 .all_list th {

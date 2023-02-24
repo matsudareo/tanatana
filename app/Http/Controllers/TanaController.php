@@ -266,7 +266,10 @@ $new_report->save();
 
     public function count_top_page(){
         $months = Month::all();
-        return view('main.count_fail', ["months" => $months]);
+        $name = Month::all();
+        //dump($name);
+        return view('main.count_fail', ["name" => $name],["months" => $months]);
+    
     }
 
     public function count(Request $request){
@@ -276,7 +279,8 @@ $new_report->save();
     $id = $request->input('fail_id');
     $fail = Month::find($id);
     $count =  Month::find($id)->manegements->sum("stock_amont");
-    //dump($fail);
+    $amont_all = Month::find($id)->update(["amont_all" => $count]);
+   // dump($amont_all);
     return view('main.count',["fails" => $fail,"count_all"=>$count]);
     }
 
