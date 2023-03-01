@@ -82,8 +82,8 @@ $new_report->save();
         //$id = $request->session()->get('fail_id');
         $id = $request->get('fail_id');
         $month_id = Month::find(["id" => $id ]);
-        // dump($month_id);
-        return view('main.top_select',["months" => $month_id]);
+         dump($request);
+        //return view('main.top_select',["months" => $month_id]);
     }
 
 
